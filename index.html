@@ -1,141 +1,90 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Kibriya | Nice delivery dersion. </title>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
 </head>
 <body>
 
-    <header>
-        <h1>Kibriya</h1>
+  <header>
+    <h1>Kibriya</h1>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#education">Education</a> |
+      <a href="#media">Media</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <nav>
-            <a href="#about">About Me</a> |
-            <a href="#education">Education</a> |
-            <a href="#media">Media</a> |
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="https://avatars.githubusercontent.com/u/208453925?v=4" alt="My photo" width="120">
+      <p>I am <strong>Your Name</strong>, a <em>student</em> who loves <mark>web design</mark>.</p>
+      <ul>
+        <li>Reading</li>
+        <li>Football</li>
+      </ul>
+    </section>
 
-    <main>
+    <section id="education">
+      <h2>Education</h2>
+      <table border="1" cellpadding="6">
+        <tr>
+          <th>Level</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>Secondary</td>
+          <td>Your School</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Higher Secondary</td>
+          <td>Your College</td>
+          <td>2024</td>
+        </tr>
+      </table>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
+    <section id="media">
+      <h2>Media</h2>
+      <video controls width="300">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
+      <br>
+      <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+      </audio>
+      <details>
+        <summary>Click to read more</summary>
+        <p>My favourite subject is Computer Science.</p>
+      </details>
+    </section>
 
-            <img src="https://avatars.githubusercontent.com/u/208453925?v=4" alt="My Picture" width="120">
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        Gender:
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label><br>
+        <label><input type="checkbox" name="interest" value="web"> Web design</label><br>
+        <select name="subject">
+          <option>Hello</option>
+          <option>Project</option>
+        </select><br>
+        <textarea name="message" rows="3" placeholder="Message"></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-            <p>
-                My name is Kibriya. I am a student.
-                I like learning <strong>web development</strong>
-                and <em>computer programming</em>.
-                I want to learn more about <mark>HTML</mark>.
-            </p>
-
-            <p>Water: H<sub>2</sub>O</p>
-            <p>Square: x<sup>2</sup></p>
-
-            <h3>My Hobbies</h3>
-            <ul>
-                <li>Playing Football</li>
-                <li>Reading Books</li>
-                <li>Learning Programming</li>
-            </ul>
-        </section>
-
-        <section id="education">
-            <h2>My Education</h2>
-
-            <table border="1" cellpadding="6">
-                <tr>
-                    <th>Level</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                </tr>
-                <tr>
-                    <td>Diploma</td>
-                    <td>My Polytechnic Institute</td>
-                    <td>2024</td>
-                </tr>
-                <tr>
-                    <td>BSc</td>
-                    <td>My University</td>
-                    <td>Running</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="media">
-            <h2>My Media</h2>
-
-            <h3>Video</h3>
-            <video width="300" controls>
-                <source src="https://youtu.be/EsjBtm8n-ac?list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVMEsjBtm8n-ac" type="video/mp4">
-            </video>
-
-            <h3>Audio</h3>
-            <audio controls>
-                <source src="https://youtu.be/EsjBtm8n-ac?list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVMEsjBtm8n-ac" type="audio/mpeg">
-            </audio>
-
-            <details>
-                <summary>Read More</summary>
-                <p>My favourite subject is Computer Science.</p>
-            </details>
-
-            <button onclick="alert('Hello!')">
-                Click Here
-            </button>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-            <form action="#" method="post">
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-
-                <p>Gender:</p>
-
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                <br><br>
-
-                <input type="checkbox" id="web" name="interest" value="web">
-                <label for="web">Web Development</label>
-                <br><br>
-
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject">
-                    <option value="hello">Hello</option>
-                    <option value="project">Project</option>
-                </select>
-                <br><br>
-
-                <textarea name="message" rows="4"
-                    placeholder="Write your message"></textarea>
-                <br><br>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Copyright &copy; 2026 My Profile</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
 
 </body>
 </html>
-```
